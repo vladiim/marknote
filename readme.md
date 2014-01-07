@@ -21,3 +21,8 @@
 3. Save note to server
 
 ***
+
+# Dependencies
+
+* Phonegap `sudo npm install -g phonegap`
+* Cordova `sudo npm install -g cordova`
