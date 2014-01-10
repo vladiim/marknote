@@ -1,33 +1,3 @@
-// http://phonegap.com/blog/2013/11/12/lxjs-workshop/
-
-require.config({
-  baseUrl: 'js',
-
-  paths: {
-    app: './app',
-    helpers: './helpers',
-    templates: './views/templates'
-  },
-
-  // map: {
-  //   "*": {
-  //     "adapters/product": "app/adapters/product-memory"
-  //   }
-  // },
-
-  shim: {
-    'handlebars': {
-      exports: 'Handlebars'
-    }
-  }
-});
-
-require(["app/router"], function(router) {
-  "use strict";
-  console.log('router: ' + router);
-  router.start();
-});
-
 // var app = {
 //     // Application Constructor
 //     initialize: function() {
@@ -68,6 +38,16 @@ require(["app/router"], function(router) {
 //     }
 // };
 
-// $(document).ready(function() {
-//     app.initialize();
-// });
+define(function(require) {
+  "use strict";
+
+  var $ = require("helpers/jquery"),
+
+      start = function() {
+        alert('Router.start')
+      };
+
+  return {
+    start: start
+  }
+});
