@@ -14,6 +14,34 @@
 
 ***
 
+# Dependencies
+
+* Phonegap `sudo npm install -g phonegap`
+* Cordova `sudo npm install -g cordova`
+* Ruby 2.0.0
+* Rubygems `bundle install`
+
+***
+
+# Coffeescript
+
+All test files are edited in `spec/coffee` all files are managed and edited in `js/coffee`. In order to automate the build from coffeescript to javascript run `guard`.
+
+***
+
+# Testing
+
+* Install mocha `npm install -g mocha`
+* Run test `mocha /path/to/file/or/dir`
+
+***
+
+# Compiling
+
+* Test on ios `$ phonegap run ios`
+
+***
+
 # WIP
 
 1. Get phonegap build working
@@ -47,16 +75,3 @@ TODO:
 		- To change views, change the class name
 * Add css html { -webkit-touch-callout: none; -webkit-tap-highligh-color: rgba(0,0,0) }
 * Compilers: coffeescript, scss, guard
-
-***
-
-# Compiling
-
-* Test on ios `$ phonegap run ios`
-
-***
-
-# Dependencies
-
-* Phonegap `sudo npm install -g phonegap`
-* Cordova `sudo npm install -g cordova`
