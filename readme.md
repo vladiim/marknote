@@ -16,6 +16,7 @@
 
 # Dependencies
 
+* Xcode
 * Phonegap `sudo npm install -g phonegap`
 * Cordova `sudo npm install -g cordova`
 * Ruby 2.0.0
@@ -31,8 +32,7 @@ All test files are edited in `spec/coffee` all files are managed and edited in `
 
 # Testing
 
-* Install mocha `npm install -g mocha`
-* Run test `mocha /path/to/file/or/dir`
+Testing is done with the Jasmine framework, to run the specs run `open www/spec.html`
 
 ***
 
