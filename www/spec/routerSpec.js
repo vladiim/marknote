@@ -1,5 +1,7 @@
 describe('testing', function() {
   it('blah', function() {
-    expect(1).toEqual(1);
+    require(['js/router'], function(router) {
+      expect(router.test).toEqual('TEST');
+    });
   });
 });

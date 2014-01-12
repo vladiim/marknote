@@ -21,8 +21,8 @@ require.config({
 
 runSpecs = function() {
   return define(function(require) {
-    var $       = require('jquery'),
-        jasmine = require('jasmine-html'),
+    var $          = require('jquery'),
+        jasmine    = require('jasmine-html'),
         jasmineEnv = jasmine.getEnv();
 
     jasmineEnv.updateInterval = 1000;
