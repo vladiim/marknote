@@ -3,7 +3,7 @@
 * Note taking app in markdown
 * Jekyl inspired simplicity
 * iPhone, iPad, iApp
-		* Later: text editor, web, url app (turns html to md then saves)
+		* Later: text editor, api, web, url app (turns html to md then saves)
 * Syncs across devices
 * Syncs to Evernote (later github, dropbox)
 * Manage notes by
@@ -26,7 +26,7 @@
 
 # Coffeescript
 
-All test files are edited in `spec/coffee` all files are managed and edited in `js/coffee`. In order to automate the build from coffeescript to javascript run `guard`.
+All test files are edited in `test/coffee` all files are managed and edited in `coffee`. In order to automate the build from coffeescript to javascript run `guard`.
 
 ***
 
@@ -52,17 +52,15 @@ All test files are edited in `spec/coffee` all files are managed and edited in `
 
 # WIP
 
-1. Get phonegap build working
-2. Create & manage note on iPhone
-3. Save note to server
+* Set up SCSS
+* View notes
+* Search notes
+		- By title, date
+* Create & manage note on iPhone
+* Save note to server
 
 TODO:
 
-* Template with handlebars
-* notesAdapter.findById that gets an in memory note
-* Route function
-* Use require.js
-* To require html = require("text!views/note.html")
 * Angular
 * UI: top coat
 * Abstract device features
