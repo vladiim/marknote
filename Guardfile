@@ -1,11 +1,11 @@
 # Global variables
 
 COFFEE = 'coffeescript'
-INPUT  = 'www/js/coffee'
-OUTPUT = 'www/js/app'
+INPUT  = 'coffee'
+OUTPUT = 'www/js'
 
-INPUT_TEST  = 'www/spec/lib/coffee'
-OUTPUT_TEST = 'www/spec'
+INPUT_TEST  = 'test/coffee'
+OUTPUT_TEST = 'test'
 
 # Installed by guard-coffeescript
 

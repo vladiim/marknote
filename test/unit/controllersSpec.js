@@ -1,16 +1,14 @@
 'use strict';
 
-/* jasmine specs for controllers go here */
+describe('MarkNote controllers', function() {
+  describe('NoteListCtrl', function() {
+  	beforeEach(module('markNoteApp'));
 
-describe('controllers', function(){
-  beforeEach(module('myApp.controllers'));
+  	it("has a 'notes' model with 2 notes", inject(function($controller) {
+  		var scope = {},
+  		    ctrl  = $controller('NoteListCtrl', { $scope: scope });
 
-
-  it('should ....', inject(function() {
-    //spec body
-  }));
-
-  it('should ....', inject(function() {
-    //spec body
-  }));
+      expect(scope.notes.length).toBe(2);
+  	}));
+  });
 });
