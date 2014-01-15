@@ -33,14 +33,14 @@ All test files are edited in `test/coffee` all files are managed and edited in `
 # Testing
 
 * Unit tests run `scripts/test.sh`
-* For end-to-end tests, start the server `scripts/web-server.js` and run `scripts/e2e-test.sh`, then visit http://localhost:8000/test/e2e/runner.html
+* For end-to-end tests, start the server `scripts/web-server.js` and run `scripts/e2e-test.sh`, then visit [http://localhost:8000/test/e2e/runner.html](http://localhost:8000/test/e2e/runner.html)
 
 ***
 
 # Dev mode
 
 * Run `scripts/web-server.js`
-* Then go to http://localhost:8000/www/index.html
+* Then go to [http://localhost:8000/www/index.html](http://localhost:8000/www/index.html)
 
 ***
 

@@ -1,7 +1,6 @@
 module.exports = function(config){
     config.set({
 
-
     basePath : '../',
 
     files : [
@@ -19,6 +18,8 @@ module.exports = function(config){
     proxies : {
       '/': 'http://localhost:8000/'
     },
+
+    urlRoot: '__karma__',
 
     plugins : [
             'karma-junit-reporter',
