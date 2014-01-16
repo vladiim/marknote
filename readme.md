@@ -33,7 +33,12 @@ All test files are edited in `test/coffee` all files are managed and edited in `
 # Testing
 
 * Unit tests run `scripts/test.sh`
-* For end-to-end tests, start the server `scripts/web-server.js` and run `scripts/e2e-test.sh`, then visit [http://localhost:8000/test/e2e/runner.html](http://localhost:8000/test/e2e/runner.html)
+* End-to-end (e2e) testing
+		- Install protractor `npm install -g protractor`
+		- Start selenium web-server `./scriptes/selenium.sh`, note this requires a [Java Runtime Environment](http://www.oracle.com/technetwork/java/javase/downloads/jre7-downloads-1880261.html) and a [Java Development Kit](http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html)
+		- Run the tests `./node_modules/protractor/bin/protractor config/protractor.config.js`
+
+<!-- * For end-to-end tests, start the server `scripts/web-server.js` and run `scripts/e2e-test.sh`, then visit [http://localhost:8000/test/e2e/runner.html](http://localhost:8000/test/e2e/runner.html) -->
 
 ***
 

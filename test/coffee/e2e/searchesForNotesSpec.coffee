@@ -1,6 +1,8 @@
+# read: https://www.exratione.com/2013/12/angularjs-headless-end-to-end-testing-with-protractor-and-selenium/
+
 describe "Searches for notes", ->
   beforeEach ->
-  	browser().navigateTo('../../www/index.html')
+  	browser.get('index.html')
 
   it "filters the notes list as the user types", ->
   	expect(repeater(".notes li").count()).toBe(2)
