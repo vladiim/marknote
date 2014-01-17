@@ -1,6 +1,6 @@
 (function() {
   describe("MarkNote controllers", function() {
-    beforeEach(module("markNoteApp"));
+    beforeEach(module("markNote"));
     return describe("NoteListCtrl", function() {
       return it("has a 'notes' model with 2 notes", inject(function($controller) {
         var ctrl, scope;

@@ -19,10 +19,7 @@ exports.config = {
   allScriptsTimeout: 11000,
 
   jasmineNodeOpts: {
-    onComplete: function () {},
-    isVerbose: true,
     showColors: true,
-    includeStackTrace: true,
     defaultTimeoutInterval: 30000
   }
 };

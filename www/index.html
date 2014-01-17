@@ -1,14 +1,14 @@
 <!doctype html>
-<html lang="en" ng-app="markNoteApp">
+<html lang="en" ng-app="markNote">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
     <link href="topcoat/css/topcoat-mobile-light.min.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
     <script src="lib/angular.js"></script>
+    <script src="js/app.js"></script>
     <script src="js/controllers.js"></script>
     <!-- 
-    <script src="lib/angular.js"></script>
     <script src="lib/angular.js"></script>
     <script src="lib/angular-touch.js"></script>
     <script src="lib/angular-resource.js"></script>
@@ -23,8 +23,12 @@
 
 <body ng-controller="NoteListCtrl">
 
-  <ul>
-    <li ng-repeat="note in notes">
+  <div class="search-bar">
+    <input ng-model="noteSearch" type="search" placeholder="Search notes" class="topcoat-search-input search-notes">
+  </div>
+
+  <ul class="notes">
+    <li ng-repeat="note in notes | filter:noteSearch">
       <h4>{{note.title}}</h4>
       <p>{{note.snippet}}</p>
     </li>

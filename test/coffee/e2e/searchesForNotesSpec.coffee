@@ -1,4 +1,8 @@
-# read: https://www.exratione.com/2013/12/angularjs-headless-end-to-end-testing-with-protractor-and-selenium/
+# https://www.exratione.com/2013/12/angularjs-headless-end-to-end-testing-with-protractor-and-selenium/
+# http://www.ng-newsletter.com/posts/practical-protractor.html
+
+
+# read https://github.com/angular/protractor/blob/master/docs/getting-started.md
 
 describe "Searches for notes", ->
   beforeEach ->
