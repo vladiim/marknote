@@ -1,0 +1,10 @@
+<div class="search-bar">
+  <input ng-model="noteSearch" type="search" placeholder="Search notes" class="topcoat-search-input search-notes">
+</div>
+
+<ul class="notes">
+  <li ng-repeat="note in notes | filter:noteSearch">
+    <h4>{{note.title}}</h4>
+    <p>{{note.snippet}}</p>
+  </li>
+</ul>

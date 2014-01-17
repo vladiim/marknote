@@ -1,5 +1,16 @@
+notesOpts =
+	templateUrl: "partials/note-list.html"
+	controller: "NoteListCtrl"
+
 angular.module("markNote", [
-	"markNote.controllers"
+	"ngRoute",
+	"markNote.controllers",
+	"markNote.memoryServices"
+]).
+config(["$routeProvider", ($routeProvider) ->
+	$routeProvider.when "/notes", { templateUrl: "www/partials/note-list.html", controller: "NoteListCtrl" }
+	$routeProvider.otherwise { redirectTo: "/notes" }
+	return
 ])
 
 # 'use strict';

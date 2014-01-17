@@ -1,5 +1,5 @@
 (function() {
-  angular.module("markNote.controllers", []).controller("NoteListCtrl", [
+  angular.module("markNote.controllers", []).controller("MainCtrl", ["$scope", function($scope) {}]).controller("NoteListCtrl", [
     "$scope", function($scope) {
       return $scope.notes = [
         {
