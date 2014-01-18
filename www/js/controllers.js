@@ -1,5 +1,11 @@
 (function() {
-  angular.module("markNote.controllers", []).controller("MainCtrl", ["$scope", function($scope) {}]).controller("NoteListCtrl", [
+  angular.module("markNote.controllers", []).controller("MainCtrl", [
+    "$route", "$location", "$routeParams", function($route, $location, $routeParams) {
+      this.$route = $route;
+      this.$location = $location;
+      return this.$routeParams = $routeParams;
+    }
+  ]).controller("NoteListCtrl", [
     "$scope", function($scope) {
       return $scope.notes = [
         {

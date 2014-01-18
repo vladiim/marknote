@@ -3924,3 +3924,8 @@ Everything below this line should be calculated using the variables above. This 
 .search-notes {
   width: 100%;
 }
+
+/* line 5, ../../sass/styles.scss */
+.scroller.notes {
+  margin-top: 10px;
+}
