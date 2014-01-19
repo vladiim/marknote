@@ -1,9 +1,48 @@
-/* line 1, ../../sass/styles.scss */
+/* line 3, ../../sass/styles.scss */
+.search-bar {
+  padding: 10px 10px 12px 8px;
+}
+
+/* line 7, ../../sass/styles.scss */
 .search-notes {
   width: 100%;
 }
 
-/* line 5, ../../sass/styles.scss */
+/* line 11, ../../sass/styles.scss */
 .scroller.notes {
   margin-top: 10px;
+}
+
+/* line 15, ../../sass/styles.scss */
+.chevron {
+  background: transparent url(../img/next_blue.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 12px;
+  top: 22px;
+  height: 50px;
+  width: 28px;
+}
+
+/* line 28, ../../sass/styles.scss */
+.topcoat-list__item {
+  position: relative;
+  clear: both;
+  padding: 0px;
+  margin: 0px;
+  padding: 5px 5px 0 5px;
+}
+/* line 35, ../../sass/styles.scss */
+.topcoat-list__item > a {
+  margin: 0px;
+  display: block;
+  height: 57px;
+  padding: 4px;
+}
+/* line 41, ../../sass/styles.scss */
+.topcoat-list__item > a p:nth-of-type(1) {
+  font-weight: bold;
 }

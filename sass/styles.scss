@@ -1,7 +1,45 @@
+// Note list
+
+.search-bar {
+  padding: 10px 10px 12px 8px;
+}
+
 .search-notes {
 	width: 100%;
 }
 
 .scroller.notes {
 	margin-top: 10px;
+}
+
+.chevron {
+  background: transparent url(../img/next_blue.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 12px;
+  top: 22px;
+  height: 50px;
+  width: 28px;
+}
+
+.topcoat-list__item {
+  position: relative;
+  clear: both;
+  padding: 0px;
+  margin: 0px;
+  padding: 5px 5px 0 5px;
+
+  > a {
+	  margin: 0px;
+	  display: block;
+	  height: 57px;
+	  padding: 4px;
+
+    p:nth-of-type(1) {
+      font-weight: bold;
+    }
+  }
 }
