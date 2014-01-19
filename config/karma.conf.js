@@ -3,15 +3,14 @@ module.exports = function(config){
     basePath : '../',
 
     files : [
-      'www/lib/fat-angular.js',
-      'www/lib/angular-*.js',
-      'test/lib/angular/angular-mocks.js',
+      'www/lib/angular.js',
+      'www/lib/angular-touch.js',
+      'www/lib/angular-animate.js',
+      'www/lib/angular-resource.js',
+      'www/lib/angular-route.js',
+      'www/lib/angular-mocks.js',
       'www/js/**/*.js',
       'test/unit/**/*.js'
-    ],
-
-    exclude : [
-      'www/lib/angular.js'
     ],
 
     autoWatch : true,
