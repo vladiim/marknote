@@ -4,30 +4,12 @@
   memoryServices = angular.module("markNote.memoryServices", []);
 
   memoryServices.factory("Notes", [
-    function() {
+    "$http", function($http) {
       return {
         getAll: function() {
-          return [
-            {
-              title: "Note 1",
-              snippet: "# First note \nBlah blah:\n\n* lol\n*lol"
-            }, {
-              title: "2nd note",
-              snippet: "Smaller snippet for 2nd note"
-            }, {
-              title: "Note 1",
-              snippet: "# First note \nBlah blah:\n\n* lol\n*lol"
-            }, {
-              title: "2nd note",
-              snippet: "Smaller snippet for 2nd note"
-            }, {
-              title: "Note 1",
-              snippet: "# First note \nBlah blah:\n\n* lol\n*lol"
-            }, {
-              title: "2nd note",
-              snippet: "Smaller snippet for 2nd note"
-            }
-          ];
+          return $http.get("data/notes/notes.json").success(function(data) {
+            return angular.fromJson(data);
+          });
         }
       };
     }

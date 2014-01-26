@@ -1,15 +1,23 @@
-# mockNote = ->
-#   notes = {}
-#   inject ($injector) ->
-#     notes = $injector.get("Notes")
-#   notes
+$httpBackend = {}
 
-# describe "MarkNote memory-services", ->
+describe "MarkNote memory-services", ->
 
-# 	beforeEach(module("markNote"))
+	beforeEach(module("markNote"))
 
-# 	describe "Notes", ->
-#     describe "#getAll()", ->
-#     	it "retrieves the notes from memory", ->
-#         notes = mockNote()
-#         expect(notes.getAll()).toEqual ["Memory notes"]
+	describe "Notes", ->
+		beforeEach(inject( ($injector) ->
+			$httpBackend = $injector.get("$httpBackend")
+			@notes       = $injector.get("Notes")
+		))
+
+		afterEach ->
+      $httpBackend.verifyNoOutstandingExpectation()
+      $httpBackend.verifyNoOutstandingRequest()
+
+		describe "#getAll()", ->
+			it "retrieves the notes from memory", ->
+        angular.fromJson = (data) -> data
+        $httpBackend.expectGET("data/notes/notes.json").respond("Notes from memory")
+        @notes.getAll().success( (data) ->
+        	expect(data).toEqual("Notes from memory"))
+        $httpBackend.flush()

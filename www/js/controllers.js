@@ -13,7 +13,9 @@
 
   controllers.controller("NoteListCtrl", [
     "$scope", "Notes", function($scope, Notes) {
-      return $scope.notes = Notes.getAll();
+      return Notes.getAll().success(function(data) {
+        return $scope.notes = data;
+      });
     }
   ]);
 

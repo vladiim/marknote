@@ -9,5 +9,5 @@ controllers.controller("MainCtrl", ["$route", "$location", "$routeParams",
 
 controllers.controller("NoteListCtrl", ["$scope", "Notes",
   ($scope, Notes) ->
-    $scope.notes = Notes.getAll();
+    Notes.getAll().success (data) -> $scope.notes = data
 ])
