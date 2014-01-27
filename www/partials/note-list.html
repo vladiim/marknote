@@ -6,7 +6,7 @@
   <div class="topcoat-list__container scroller notes">
 		<ul class="topcoat-list__list">
 		  <li ng-repeat="note in notes | filter:noteSearch" class="topcoat-list__item">
-		  	<a>
+		  	<a ng-click="visitURL('/notes/{{ note.id }}')">
 			    <p>{{ note.title }}</p>
 			    <p>{{ note.snippet }}</p>
 			    <span class="chevron"></span>

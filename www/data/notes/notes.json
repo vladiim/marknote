@@ -1,8 +1,8 @@
 [
-  { "title":  "Note 1",  "snippet": "# First note \nBlah blah:\n\n* lol\n*lol" },
-  { "title": "2nd note", "snippet": "Smaller snippet for 2nd note" },
-  { "title":  "Note 1",  "snippet": "# First note \nBlah blah:\n\n* lol\n*lol" },
-  { "title": "2nd note", "snippet": "Smaller snippet for 2nd note" },
-  { "title":  "Note 1",  "snippet": "# First note \nBlah blah:\n\n* lol\n*lol" },
-  { "title": "2nd note", "snippet": "Smaller snippet for 2nd note" }
+  { "id": 1, "title":  "Note 1",  "snippet": "# First note \nBlah blah:\n\n* lol\n*lol" },
+  { "id": 2, "title": "2nd note", "snippet": "Smaller snippet for 2nd note" },
+  { "id": 3, "title":  "Note 1",  "snippet": "# First note \nBlah blah:\n\n* lol\n*lol" },
+  { "id": 4, "title": "2nd note", "snippet": "Smaller snippet for 2nd note" },
+  { "id": 5, "title":  "Note 1",  "snippet": "# First note \nBlah blah:\n\n* lol\n*lol" },
+  { "id": 6, "title": "2nd note", "snippet": "Smaller snippet for 2nd note" }
 ]
