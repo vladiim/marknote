@@ -9,7 +9,11 @@ controllers.controller("MainCtrl", ["$route", "$location", "$routeParams", "$roo
 
 controllers.controller("NoteShowCtrl", ["$scope", "$routeParams",
   ($scope, $routeParams) ->
-    # alert("note id: " + $routeParams.noteId)
+
+    $scope.note =
+    	id: $routeParams.noteId
+    	title: "Note title"
+    	body: "\n# First note \nBlah blah:\n\n* lol\n*lol"
 ])
 
 controllers.controller("NoteListCtrl", ["$scope", "Notes",

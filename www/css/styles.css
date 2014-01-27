@@ -46,3 +46,32 @@
 .topcoat-list__item > a p:nth-of-type(1) {
   font-weight: bold;
 }
+
+/* line 49, ../../sass/styles.scss */
+.note-edit {
+  width: 100%;
+}
+
+/* line 53, ../../sass/styles.scss */
+#note-show {
+  padding: 10px;
+}
+
+/* line 57, ../../sass/styles.scss */
+#note-title-input {
+  font-size: 200%;
+  font-weight: bold;
+}
+
+/* line 62, ../../sass/styles.scss */
+#note-md-switch {
+  padding: 10px;
+}
+/* line 65, ../../sass/styles.scss */
+#note-md-switch p {
+  position: absolute;
+  margin: -45px 0 0 110px;
+  font-weight: bold;
+  font-size: 200%;
+  color: #797B7B;
+}

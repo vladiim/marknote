@@ -11,7 +11,15 @@
     }
   ]);
 
-  controllers.controller("NoteShowCtrl", ["$scope", "$routeParams", function($scope, $routeParams) {}]);
+  controllers.controller("NoteShowCtrl", [
+    "$scope", "$routeParams", function($scope, $routeParams) {
+      return $scope.note = {
+        id: $routeParams.noteId,
+        title: "Note title",
+        body: "\n# First note \nBlah blah:\n\n* lol\n*lol"
+      };
+    }
+  ]);
 
   controllers.controller("NoteListCtrl", [
     "$scope", "Notes", function($scope, Notes) {

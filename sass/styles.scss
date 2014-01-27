@@ -43,3 +43,30 @@
     }
   }
 }
+
+// Note Show
+
+.note-edit {
+  width: 100%;
+}
+
+#note-show {
+  padding: 10px;
+}
+
+#note-title-input {
+  font-size: 200%;
+  font-weight: bold;
+}
+
+#note-md-switch {
+  padding: 10px; 
+
+  p {
+    position: absolute;
+    margin: -45px 0 0 110px;
+    font-weight: bold;
+    font-size: 200%;
+    color: #797B7B;
+  }
+}
